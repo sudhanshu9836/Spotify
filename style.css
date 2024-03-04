@@ -226,6 +226,9 @@ a{
 .player-control-icon:hover{
     opacity: 1;
 }
+.playback-bar{
+    display: flex;
+}
 
 .progress-bar::-webkit-slider-runnable-track{
     background-color: #ddd;
@@ -250,7 +253,7 @@ a{
     .sidebar{
         width: 200px;
     }
-    button{
+    .badge{
         transform: scale(0.5);
         position: relative;
         bottom: 20px;
@@ -260,5 +263,17 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .sticky-nav{
+        display: none;
+    }
+    .player-controls{
+        transform: translate(0px, 6px);
+        margin-bottom: 10px;
+    }
+}
+@media  screen and (max-width:420px){
+    .card{
+        transform: scale(0.7);
     }
 }
